@@ -6,6 +6,11 @@
         
         <style>
             
+            li {
+                color: white;
+                padding: 10px
+            }
+            
             .icon-bar {
                 width: 100%; /* Full-width */
                 background-color: #555; /* Dark-grey background */
@@ -42,34 +47,46 @@
     
         <!-- Bar the top with logo and shopping cart -->
         <div class="icon-bar" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <a class="active" href="#">
+            <a href="welcomepage.html">
                     
                 <img style="width: 25%; height: 25% " src="uottawa.png">
                 
                 </a> 
             
-            <a href="#" style="float: right">
+            <a href="orderpage.html" style="float: right">
             
                 <img src="cart.png" style="width: 6%; height: 6%; margin-top: 7px" style="float: right">
                 
             <i class="cart"></i></a> 
         </div>
         
-        <!-- Main page, has background -->
         <div >
         
-            <!-- Slogan words -->
-            <div>
+            <div style="padding: 10px; color: white">
+                
+                <h1 style="padding: 10px">Your order:</h1>
                 
             </div>
             
             <!--City selection drop down -->
-            <div>
+            <div style="padding: 10px">
+                
+                <ul>
+                
+                    <li>Food, Quantity, Price <button type="button">Remove</button></li>
+                    <li>Food, Quantity, Price <button type="button">Remove</button></li>
+                    <li>Food, Quantity, Price <button type="button">Remove</button></li>
+                    <li>Food, Quantity, Price <button type="button">Remove</button></li>
+                    <li>Food, Quantity, Price <button type="button">Remove</button></li>
+                
+                </ul>
             
             </div>
             
             <!-- Search by rest. name and search b y meal type, appears and disappears (to be implemented) -->
-            <div>
+            <div style="padding: 10px">
+                
+                <a href="paymentpage.html"><button type="submit">Confirm and checkout</button></a>
             
             </div>
             
