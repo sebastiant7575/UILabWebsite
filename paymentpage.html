@@ -2,6 +2,32 @@
 <html>
 
     <head>
+        
+        <script>
+        
+            function popUp(){
+                
+                var address = document.getElementById("address").value;
+                var ccNumber = document.getElementById("ccNumber").value;
+                var ccv = document.getElementById("ccv").value;
+                if(address.length > 0){
+                    
+                    if(ccNumber > 999999999999999 && ccNumber < 10000000000000000){
+                        if (ccv > 99 && ccv < 1000){
+                            alert("Order confirmed")
+                        }else{
+                            alert("Order failed, ensure CCV is 3 digits")
+                        }
+                    }else{
+                        alert("Order failed, ensure credit card number is 16 digits")
+                    }   
+                } else{
+                    alert("Order failed, please check address")
+                }
+            }
+                            
+        
+        </script>
     
         <style>
             
@@ -48,6 +74,11 @@
             .active {
                 background-color: ; /* Add an active/current color */
             }
+            
+            .confirm:hover{
+                border: 2px solid #4CAF50; /* Green */
+            }
+        
         
         </style>
     </head>
@@ -74,28 +105,30 @@
         <!-- Main page, has background -->
         <div >
         
-            <h2 style="color: white; padding: 10px">Welcome to checkout </h2>
+            <h2 style="color: white; padding: 10px; font-family: Arial">Welcome to checkout </h2>
             
-            <p>Total price:</p>
+            <p style="font-family: Arial">Total price:</p>
             
-            <p>Please confirm your payment information</p>
+            <p style="font-family: Arial">Please confirm your payment information</p>
             
             <div style="padding: 10px">
                 
-                <input type="text" placeholder="Delivery address... ">
-                
-            </div>
-            
-            <div style="padding: 10px">
-            
-                <input type="text" placeholder="Credit card number... ">
-                <input type="text" placeholder="CCV...">
+                <input type="text" id="address" placeholder="Delivery address... ">
                 
             </div>
             
             <div style="padding: 10px">
             
-                <button type="button" style="padding: 10px">Confirm</button>
+                <input type="number" id="ccNumber" placeholder="Credit card number... ">
+                <input type="number" id="ccv" placeholder="CCV...">
+                
+            </div>
+            
+            <img src="secure.png" style="height: 20%; width: 20%">
+            
+            <div style="padding: 10px">
+            
+                <button class="confirm" type="button" style="padding: 10px; border-radius: 2px;" onclick="popUp()">Confirm</button>
                 
             </div>
             
