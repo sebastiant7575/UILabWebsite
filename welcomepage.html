@@ -48,6 +48,12 @@
             .active {
                 background-color: ; /* Add an active/current color */
             }
+            
+            .searchbutton:hover{
+                transition: all 0.3s ease; /* Add transition for hover effects */
+
+                border: 2px solid #4CAF50; /* Green */
+            }
         
         </style>
     </head>
@@ -128,7 +134,7 @@
                         <p style="color: white; padding-top: 25px">Search for your meal:</p>
                         
                         <input type="text" placeholder="Search...">
-                        <button type="submit">Search</button>
+                        <button class = "searchbutton" type="submit"; style="border-radius: 2px;">Search</button>
                     
                     </div>
             
