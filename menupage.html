@@ -2,6 +2,8 @@
 <html>
 
     <head>
+
+         <script src="Cart.js" ></script>
     
         <style>
             
@@ -16,6 +18,47 @@
                 font-size: 16px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
+
+
+
+                .shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 15px;
+    font-family: Arial;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-family: Arial
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: white;
+    font-family: Arial
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
             
             .icon-bar {
                 width: 100%; /* Full-width */
@@ -80,73 +123,57 @@
 
 
 
-        <div>
-            <ul  align="center" style="width: 100%; list-style-type: none; color: white; font-family: Verdana;">
-                <li>Food one price  <select name="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
 
-                        </select> <button> + </button> </li>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title" id = "item-1-title">Food 1</span>
+                    <img class="shop-item-image" src="download.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id = "item-1-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" value = "item-1-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Food 2</span>
+                    <img class="shop-item-image" src="download.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Food 3</span>
+                    <img class="shop-item-image" src="download.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Food 4</span>
+                    <img class="shop-item-image" src="download.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
 
 
-                 <li>Food one price  <select name="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
 
-                        </select> <button> + </button> </li>
-                 <li>Food one price  <select name="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+        
 
-                        </select> <button> + </button> </li>
 
-                 <li>Food one price  <select name="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
 
-                        </select> <button> + </button> </li>
-                 <li>Food one price  <select name="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
 
-                        </select> <button> + </button> </li>
+      
 
-                 <li>Food one price  <select name="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
 
-                        </select> <button> + </button> </li>
 
-                 <li>Food one price  <select name="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-
-                        </select> <button> + </button> </li>
-                
-            </ul>
-
-        <div align="center">
+        </div>
+           <div align="center">
             <a href="orderpage.html"> <button type="button"> submit order</button> </a>
         </div>
-
-
-
-        </div>
-        
     </body>
 
 </html>
